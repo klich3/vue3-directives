@@ -127,3 +127,40 @@ el -> DOM element
 data -> parsed data
 ```
 </details>
+
+## observeVisibility
+
+
+Desc: directive observe-visibility for Vue 3
+Docs: 
+	* https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+
+<details>
+    <summary>Sample:</summary>
+
+```javascript
+    import { setupObserveVisibility } from "@/directives/observe-visibility";
+    setupObserveVisibility(app);
+```
+
+```html
+    tmeplate:
+    <div v-observe-visibility="onVisibilityChange"></div>
+```
+
+```javascript
+	const changeClassOnVisible = (e, dom) => {
+		console.log(e, e.domVisible, dom);
+
+		if (e.domVisible) {
+			e.target.classList.add("visible");
+			e.target.style.border = "2px solid green";
+			e.target.style.visibility = "visible";
+		} else {
+			dom.classList.remove("visible");
+			dom.style.border = "none";
+			dom.style.visibility = "hidden";
+		}
+	};
+```
+</details>
