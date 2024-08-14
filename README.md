@@ -166,6 +166,24 @@ Docs:
 </details>
 
 
+## observeResize
+
+Desc: Observe resize directive
+
+<details>
+    <summary>Sample:</summary>
+```javascript
+    import { setupObserveResize } from "@/directives/observe
+    setupObserveResize(app);
+```
+
+```html
+    tmeplate:
+    <div v-observe-resize="doSomething"></div>
+```
+
+</details>
+---
 
 ## Star History
 

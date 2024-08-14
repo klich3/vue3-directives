@@ -15,13 +15,13 @@ Sample:
 		- or manual
 		
 		import onChangeDirective from "@/plugins/directives/onChangeDirective.js";
-		Vue.directive("onchange", onChangeDirective);
+		Vue.directive("observe-change", onChangeDirective);
 	
 	template:
 		class: on appear this class trigger call callback function
 		data: if nedeed to parse data to function callback
 	
-		<div v-onchange="{ class:'in-viewport', data: {} }" @on-change="function_callback"></div>
+		<div v-observe-change="{ class:'in-viewport', data: {} }" @on-change="function_callback"></div>
 		
 		function_callback -> attbutes
 			el -> dom element
@@ -60,7 +60,7 @@ const changerDirective = {
 };
 
 export const setupOnChange = (app) => {
-	app.directive("onchange", changerDirective);
+	app.directive("observe-change", changerDirective);
 };
 
 export default changerDirective;
