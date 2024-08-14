@@ -164,3 +164,9 @@ Docs:
 	};
 ```
 </details>
+
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=klich3/vue3-directives&type=Date)](https://star-history.com/#klich3/vue3-directives&Date)
